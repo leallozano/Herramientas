@@ -12,8 +12,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/menu"
         android:name="com.example.caleal.herramientas.Menu"
-        tools:layout="@layout/fragment_menu"
-        ></fragment>
+        tools:layout="@layout/fragment_menu">
+
+    </fragment>
 
     <RelativeLayout
         android:layout_width="match_parent"
