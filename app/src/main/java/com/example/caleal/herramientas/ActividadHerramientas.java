@@ -34,6 +34,16 @@ public class ActividadHerramientas extends AppCompatActivity implements Comunica
 
         FragmentTransaction miTransaccion=miManejador.beginTransaction();
 
+        Fragment menu_iluminado= new Menu();
+
+        Bundle datos=new Bundle();
+
+        datos.putInt("BOTONESPULSADO",queBoton);
+
+        menu_iluminado.setArguments(datos);
+
+        miTransaccion.replace(R.id.menu,menu_iluminado);
+
         miTransaccion.replace(R.id.herramientas,misFragmentos[queBoton]);
 
         miTransaccion.commit();
